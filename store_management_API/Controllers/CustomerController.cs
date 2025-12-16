@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using store_management_WebAPI.Data;
 using Microsoft.EntityFrameworkCore;
+using store_management_WebAPI.Data;
+using store_management_WebAPI.Models;
 
 namespace store_management_WebAPI.Controllers
 {
@@ -18,7 +19,9 @@ namespace store_management_WebAPI.Controllers
         [HttpGet]
         public async Task<IActionResult> GetCustomers()
         {
-            var customers = await _context.Customers.ToListAsync();
+            var customers = await _context.Customers
+                .Include(c => c.Account) // Include account
+                .ToListAsync();
             return Ok(customers);
         }
 
@@ -26,9 +29,13 @@ namespace store_management_WebAPI.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetCustomer(int id)
         {
-            var customer = await _context.Customers.FindAsync(id);
+            var customer = await _context.Customers
+                .Include(c => c.Account) // Include account
+                .FirstOrDefaultAsync(c => c.customer_id == id);
+
             if (customer == null)
                 return NotFound();
+
             return Ok(customer);
         }
 
