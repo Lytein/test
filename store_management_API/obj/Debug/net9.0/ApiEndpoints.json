@@ -135,6 +135,48 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "store_management_WebAPI.Controllers.CustomerAuthController",
+    "Method": "GetCustomerAccounts",
+    "RelativePath": "api/customer-auth",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "store_management_WebAPI.Controllers.CustomerAuthController",
+    "Method": "Login",
+    "RelativePath": "api/customer-auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "store_management_WebAPI.DTOs.CustomerLoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "store_management_WebAPI.Controllers.CustomerAuthController",
+    "Method": "Register",
+    "RelativePath": "api/customer-auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "store_management_WebAPI.DTOs.CustomerRegisterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "store_management_WebAPI.Controllers.CustomerController",
     "Method": "GetCustomer",
     "RelativePath": "api/Customer/{id}",

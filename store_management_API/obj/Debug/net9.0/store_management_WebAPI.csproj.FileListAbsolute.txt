@@ -35,6 +35,7 @@ C:\Users\Phuc\OneDrive\Desktop\store_management_API\obj\Debug\net9.0\staticwebas
 C:\Users\Phuc\OneDrive\Desktop\store_management_API\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\Phuc\OneDrive\Desktop\store_management_API\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\Phuc\OneDrive\Desktop\store_management_API\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\Phuc\OneDrive\Desktop\store_management_API\obj\Debug\net9.0\swae.build.ex.cache
 C:\Users\Phuc\OneDrive\Desktop\store_management_API\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\Phuc\OneDrive\Desktop\store_management_API\obj\Debug\net9.0\store_ma.B1358654.Up2Date
 C:\Users\Phuc\OneDrive\Desktop\store_management_API\obj\Debug\net9.0\store_management_WebAPI.dll
