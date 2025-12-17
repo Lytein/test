@@ -15,4 +15,6 @@ public class Customer
     public DateTime created_at { get; set; } = DateTime.Now;
     [JsonIgnore]
     public CustomerAccount? Account { get; set; }
+    [JsonIgnore]
+    public ICollection<Order> Orders { get; set; } = new List<Order>();
 }

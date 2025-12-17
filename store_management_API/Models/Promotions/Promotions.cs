@@ -20,6 +20,7 @@ public class Promotion
     public decimal? min_order_amount { get; set; }
     public int? usage_limit { get; set; }
     public int? used_count { get; set; }
-    public string? status { get; set; }
+    public string? status { get; set; } = PromotionStatus.active.ToString();
+    public ICollection<Order> Orders { get; set; } = new List<Order>();
 }
 

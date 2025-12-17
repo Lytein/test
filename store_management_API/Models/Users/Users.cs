@@ -16,5 +16,7 @@ public class User
     public string? full_name { get; set; }
     public UserRole role { get; set; } = UserRole.staff;
     public DateTime? created_at { get; set; }
+
+    public ICollection<Order> Orders { get; set; } = new List<Order>();
 }
 

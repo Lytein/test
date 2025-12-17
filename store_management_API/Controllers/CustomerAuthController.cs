@@ -131,7 +131,7 @@ namespace store_management_WebAPI.Controllers
             // Tạo JWT
             var claims = new[]
             {
-                new Claim("customer_id", acc.customer_id.ToString()),
+                new Claim("id", acc.customer_id.ToString()),
                 new Claim("username", acc.username),
                 new Claim(ClaimTypes.Role, "customer")
             };
